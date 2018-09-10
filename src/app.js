@@ -40,31 +40,33 @@ function interval (id, percent, end) {
 let count = 0;
 
 function nextImage() {
+  console.log('next image');
   count++;
   if (count === 1) {
-    image.src = "./assets/main2.jpg";
+    image.style.background =  "linear-gradient(to right, rgba(243, 104, 25, 0.3), rgba(0, 0, 0, 0.3)), url('./assets/main2.jpg') no-repeat";
+    image.style.backgroundSize = "cover";
+    image.style.backgroundPosition = "center center";
     circle1.style.backgroundColor = "white";
     circle2.style.backgroundColor = "black";
     circle3.style.backgroundColor = "white";
   }
   else if (count === 2) {
-    image.src = "./assets/main3.jpg";
+    image.style.background =  "linear-gradient(to right, rgba(243, 104, 25, 0.3), rgba(0, 0, 0, 0.3)), url('./assets/main3.jpg') no-repeat";
+    image.style.backgroundSize = "cover";
+    image.style.backgroundPosition = "center center";
     circle1.style.backgroundColor = "white";
     circle2.style.backgroundColor = "white";
     circle3.style.backgroundColor = "black";
   }
   else if (count === 3) {
     count = 0;
-    image.src = "./assets/main1.jpeg";
+    image.style.background =  "linear-gradient(to right, rgba(243, 104, 25, 0.3), rgba(0, 0, 0, 0.3)), url('./assets/main1.jpeg') no-repeat";
+    image.style.backgroundSize = "cover";
+    image.style.backgroundPosition = "center center";
     circle1.style.backgroundColor = "black";
     circle2.style.backgroundColor = "white";
     circle3.style.backgroundColor = "white";
   }
-}
-
-function clickCircle(event) {
-  console.log('hello');
-  console.log(event);
 }
 
 setInterval(function() {nextImage()}, 8000);
