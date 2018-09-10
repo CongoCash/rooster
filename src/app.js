@@ -9,6 +9,10 @@ window.onclick = function(event) {
   }
 };
 
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}
+
 let image = '';
 let circle1 = '';
 let circle2 = '';
@@ -24,7 +28,6 @@ window.onload = function() {
   circle1 = document.getElementById('circle1');
   circle2 = document.getElementById('circle2');
   circle3 = document.getElementById('circle3');
-
 };
 
 function interval (id, percent, end) {
@@ -40,7 +43,6 @@ function interval (id, percent, end) {
 let count = 0;
 
 function nextImage() {
-  console.log('next image');
   count++;
   if (count === 1) {
     image.style.background =  "linear-gradient(to right, rgba(243, 104, 25, 0.3), rgba(0, 0, 0, 0.3)), url('./assets/main2.jpg') no-repeat";
@@ -67,6 +69,17 @@ function nextImage() {
     circle2.style.backgroundColor = "white";
     circle3.style.backgroundColor = "white";
   }
+}
+
+function sendMessage() {
+  let message = document.getElementById("message-confirmation");
+  closeModal();
+  setTimeout(function() {
+    message.style.display = "block";
+    setTimeout(function() {
+      message.style.display = "none";
+    }, 5000)
+  }, 1)
 }
 
 setInterval(function() {nextImage()}, 8000);
