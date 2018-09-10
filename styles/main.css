@@ -1,3 +1,301 @@
-h1 {
-  font-size: 35px
+body {
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar1 {
+  background-color: #1676DD;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+.main-image-container {
+  position: relative;
+}
+
+.left-text-image {
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  font-size: 48px;
+  font-family: 'Roboto-Bold', sans-serif;
+}
+
+.left-button-image {
+  position: absolute;
+  top: 73%;
+  left: 15%;
+}
+
+.main-image {
+  width: 100%;
+  height: 576px;
+}
+
+.circle {
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  border: solid 1px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#circle1 {
+  background-color: black;
+}
+
+.envelope {
+  background-color: #F7931D;
+  position: absolute;
+  top: 69%;
+  right: 0;
+  border-radius: 5px 0 0 5px;
+  filter: drop-shadow(0px 1px 4px #F7931D);
+}
+
+.image-text {
+  color: white;
+}
+
+.center-align {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.gradient-bg-container {
+  position: relative;
+}
+
+.gradient-bg {
+  width: 100%;
+  height: 230px;
+}
+
+.center-text-image {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 66%;
+  text-align: center;
+  font-size: 28px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.martop-75 {
+  margin-top: 75px;
+}
+
+.martop-40 {
+  margin-top: 40px;
+}
+
+.martop-50 {
+  margin-top: 50px;
+}
+
+.lorem {
+  font-family: 'Roboto-Bold', sans-serif;
+  font-size: 28px;
+  color: #F36819;
+}
+
+.ipsum {
+  font-family: 'Roboto-Bold', sans-serif;
+  font-size: 28px;
+  color: #283647;
+}
+
+.button {
+  width: 215px;
+  height: 40px;
+  border-radius: 5px;
+  font-family: 'Roboto Regular', 'sans-serif';
+  background-image: linear-gradient(to bottom right, #F36819, yellow);
+  font-size: 16px;
+  color: white;
+  filter: drop-shadow(0px 1px 4px #F36819);
+}
+
+.paragraph {
+  font-family: 'Roboto Regular', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.percent {
+  font-family: 'Roboto-Bold', sans-serif;
+  font-size: 55px;
+  letter-spacing: 2px;
+}
+
+.light-orange {
+  color: #F7931D;
+}
+
+.percent-text {
+  text-align: center;
+  margin-left: 24%;
+  margin-right: 24%;
+}
+
+.header2 {
+  font-family: 'Roboto-Regular', sans-serif;
+  font-size: 28px;
+  color: #F36819;
+}
+
+.header3 {
+  font-family: 'Roboto-Regular', sans-serif;
+  font-size: 20px;
+  color: #F7931D;
+  letter-spacing: 2px;
+}
+
+.bottom-images {
+  width: 705px;
+  height: 305px;
+}
+
+.hand-text {
+  width: 90%;
+  margin-top: 25px;
+}
+
+.mar-bottom {
+  margin-bottom: 100px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-container {
+  margin-top: 2%;
+  width: 60%;
+  text-align: center;
+}
+
+.label {
+  color: white;
+  text-align: left;
+  margin-left: 10px;
+  padding-top: 20px;
+}
+
+.name-input {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.double-input {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.message-input {
+  width: 100%;
+  border-radius: 5px;
+  line-height: 150px;
+}
+
+.input-button {
+  width: 200px;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .center-text-image {
+    font-size: 20px;
+  }
+
+  .bottom-images {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .left-text-image {
+    font-size: 38px;
+  }
+
+  .modal-container {
+    width: 90%;
+  }
+
+  .center-text-image {
+    font-size: 15px;
+  }
+
+  .percent-text {
+    margin-left: 0;
+    margin-right: 0%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .main-image {
+    height: 200px;
+  }
+
+  .left-text-image {
+    font-size: 20px;
+    top: 42%;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  .left-button-image {
+    top: 62%;
+  }
+
+  .button {
+    width: 25%;
+  }
+
+  .center-text-image {
+    font-size: 10px;
+    width: 90%;
+  }
+
+  .percent-text {
+    margin-left: 24%;
+    margin-right: 24%;
+  }
+}
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 7s;
 }

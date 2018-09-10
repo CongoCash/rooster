@@ -3,13 +3,234 @@
   <head>
     <meta charset="utf-8">
     <title>Rooster Grin Front End Dev Test</title>
-    <link rel="stylesheet" href="/styles/main.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <script type="text/javascript" src="./src/app.js"></script>
   </head>
   <body>
+    <div class="container-fluid" >
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar1">
+            <img class="logo" src="./assets/logo.png"/>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="main-image-container">
+            <img onClick="nextImage()" id="main-image" class="main-image" src="./assets/main1.jpeg"/>
+            <span class="image-text left-text-image">Lorem Ipsum Lorem Ipsum</span>
+            <button onClick="openModal()" class="button left-button-image">Button</button>
+            <img class="envelope" src="./assets/envelope-icon.svg" />
+            <div class="row">
+              <div class="col-4 offset-4 col-sm-2 offset-sm-5">
+                <div class="row">
+                  <div class="col-4">
+                    <span onClick="clickCircle()" class="circle" id="circle1"></span>
+                  </div>
+                  <div class="col-4">
+                    <span onClick="clickCircle()" class="circle" id="circle2"></span>
+                  </div>
+                  <div class="col-4">
+                    <span onClick="clickCircle()" class="circle" id="circle3"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-4 offset-sm-2">
+          <div class="row">
+            <div class="col-2">
+              <div class="center-align">
+                <img src="./assets/page-icon.svg"/>
+              </div>
+            </div>
+            <div class="col-10">
+              <p class="center-align">Lorem ipsum dolor sit amet, ac dis arcu libero, pulvinar vitae lectus curus.</p>
+            </div>
+          </div>
+        </div>
 
-    <pre>
-      <h1>Hello World</h1>
-    </pre>
+        <div class="col-12 col-sm-4">
+          <div class="row">
+            <div class="col-2">
+              <div class="center-align">
+                <img src="./assets/page-icon.svg"/>
+              </div>
+            </div>
+            <div class="col-10">
+              <p class="center-align">Lorem ipsum dolor sit amet, ac dis arcu libero, pulvinar vitae lectus curus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-sm-4 offset-sm-2">
+          <div class="row">
+            <div class="col-2">
+              <div class="center-align">
+                <img src="./assets/page-icon.svg"/>
+              </div>
+            </div>
+            <div class="col-10">
+              <p class="center-align">Lorem ipsum dolor sit amet, ac dis arcu libero, pulvinar vitae lectus curus.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-4">
+          <div class="row">
+            <div class="col-2">
+              <div class="center-align">
+                <img src="./assets/page-icon.svg"/>
+              </div>
+            </div>
+            <div class="col-10">
+              <p class="center-align">Lorem ipsum dolor sit amet, ac dis arcu libero, pulvinar vitae lectus curus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 gradient-bg-container">
+          <img class="gradient-bg" src="./assets/gradient-bg.svg" />
+          <div class="center-text-image image-text">Lorem ipsum dolor sit amet, ac dis arcu libero, pulvinar vitae lectus curus.
+            Purus libero amet, at dui, tincidunt nunc vestibulum in justo, a faucibus ipsum hendrerit semper ipsum ac.
+          </div>
+        </div>
+      </div>
+
+      <div class="row martop-75">
+        <div class="col-12 center-text">
+          <span class="lorem">Lorem</span><span class="ipsum"> Ipsum</span>
+        </div>
+      </div>
+
+      <div class="row martop-40">
+        <div class="col-12 col-sm-4 offset-sm-2">
+          <span class="paragraph">Lorem ipsum dolor sit amet consectetuer adipiscing elit, sed do  eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullacmo laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+        </div>
+        <div class="col-12 col-sm-4">
+          <div class="center-align">
+            <button onClick="openModal()" class="button">Button</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row martop-40">
+        <div class="col-8 offset-2">
+          <div class="row">
+            <div class="col-12 col-sm-4">
+              <div id="percent1" class="percent center-text">240%</div>
+              <div class="paragraph percent-text light-orange">Lorem ipsum dolor sit amet Lorem ipsum dolor ipsum dolor</div>
+            </div>
+
+            <div class="col-12 col-sm-4">
+              <div id="percent2" class="percent center-text">105%</div>
+              <div class="paragraph percent-text light-orange">Lorem ipsum dolor sit amet Lorem ipsum dolor ipsum dolor</div>
+            </div>
+
+            <div class="col-12 col-sm-4">
+              <div id="percent3" class="percent center-text">159%</div>
+              <div class="paragraph percent-text light-orange">Lorem ipsum dolor sit amet Lorem ipsum dolor ipsum dolor</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row martop-75">
+        <div class="col-12 center-text">
+          <span class="lorem">Lorem</span><span class="ipsum"> Ipsum</span>
+        </div>
+      </div>
+
+      <div class="row martop-75 fade-in">
+        <div class="col-12 col-sm-5 offset-sm-1 martop-40">
+          <div>
+            <div class="header2">Lorem ipsum dolor sit amet</div>
+            <div class="header3">Lorem ipsum dolor sit amet lorem</div>
+            <div class="paragraph hand-text">Lorem ipsum dolor sit amet , ac dis arcu libero, pulvinar vitae lectus cursus.  Purus libero
+              amet, at dui, tincidunt nunc vestibulum in justo, a faucibus ipsum hendrerit semper ipsum.  Lorem ipsum dolor sit
+              amet, ac dis arcu libero, pulvinar vitae lectus cursus.  Purus libero amet, at dui tincidunt nunc vestibulum in
+              justo, a faucibus ipsum hendrerit semper ipsum ac.</div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-5">
+          <img class="bottom-images" src="./assets/img1.jpg" />
+        </div>
+      </div>
+
+      <div class="row martop-75 mar-bottom fade-in">
+        <div class="col-12 col-sm-7">
+          <img class="bottom-images" src="./assets/img2.jpg" />
+        </div>
+        <div class="col-12 col-sm-5 martop-50">
+          <div>
+            <div class="header2">Lorem ipsum dolor sit amet</div>
+            <div class="header3">Lorem ipsum dolor sit amet lorem</div>
+            <div class="paragraph hand-text">Lorem ipsum dolor sit amet , ac dis arcu libero, pulvinar vitae lectus cursus.  Purus libero
+              amet, at dui, tincidunt nunc vestibulum in justo, a faucibus ipsum hendrerit semper ipsum.  Lorem ipsum dolor sit
+              amet, ac dis arcu libero, pulvinar vitae lectus cursus.  Purus libero amet, at dui tincidunt nunc vestibulum in
+              justo, a faucibus ipsum hendrerit semper ipsum ac.</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal" class="modal">
+
+        <div class="modal-container container">
+          <div class="row">
+            <div class="col-12">
+              <div class="header2">Lorem Ipsum</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="label">Your Name</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <input class="name-input" type="text">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="label">Your Email</div>
+              <input class="double-input" type="text">
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="label">Phone Number</div>
+              <input class="double-input" type="text">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <div class="label">Message</div>
+              <input class="message-input" type="text">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <button class="button input-button">Button</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
 
     <script type="text/javascript" src="bundle.js"></script>
   </body>
